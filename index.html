@@ -31,4 +31,13 @@
     <div id="slide"></div>
     <div id="left"></div><div id="right"></div>
   </body>
+  <script>
+    var slides = {}
+    slides.gCound = 0;
+    slides.bCound = 0;
+    slides.good = function(){slides.gCound = slides.gCount + 1;}
+    slides.bad = function(){slides.bCound = slides.bCount + 1;}
+    document.getElelementById("right").setAttribute("onclick","slides.good()")
+    document.getElelementById("left").setAttribute("onclick","slides.bad()")
+  </script>
 </html>
